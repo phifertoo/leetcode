@@ -1,11 +1,10 @@
 package main
 
 import (
-	"fmt"
-	"github.com/phifertoo/leetcode"
+	"github.com/phifertoo/leetcode/exercises"
 )
 
 func main() {
-	fmt.Print(leetcode([]int{3, 2, 4}, 6))
-	fmt.Print("test")
+	exercises.IsPalindromeTester()
+	// exercises.TwoSumsTester()
 }

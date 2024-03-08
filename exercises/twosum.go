@@ -1,6 +1,8 @@
-package leetcode
+package exercises
 
-func twoSums(nums []int, target int) []int {
+import "fmt"
+
+func TwoSums(nums []int, target int) []int {
 	indices := make(map[int]int)
 	// create a hash map
 	for i, element := range nums {
@@ -18,4 +20,10 @@ func twoSums(nums []int, target int) []int {
 	}
 
 	return []int{}
+}
+
+func TwoSumsTester() bool {
+	fmt.Print(TwoSums([]int{3, 2, 4}, 6)) //[0,1]
+
+	return true
 }
