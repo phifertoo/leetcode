@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
-	exercises.IsPalindromeTester()
+	exercises.RomanToIntTester()
+	// exercises.IsPalindromeTester()
 	// exercises.TwoSumsTester()
 }

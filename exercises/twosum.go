@@ -9,10 +9,7 @@ func TwoSums(nums []int, target int) []int {
 		indices[element] = i
 	}
 
-	// fmt.Printf("%+v\n", indices)
-
 	for i, element := range nums {
-		// fmt.Print(target, element)
 		_, exists := indices[target-element]
 		if exists && indices[target-element] != i {
 			return []int{indices[target-element], i}
