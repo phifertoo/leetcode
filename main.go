@@ -5,7 +5,8 @@ import (
 )
 
 func main() {
-	exercises.LongestCommonPrefixTester()
+	exercises.IsValidParenthesesTester()
+	// exercises.LongestCommonPrefixTester()
 	// exercises.RomanToIntTester()
 	// exercises.IsPalindromeTester()
 	// exercises.TwoSumsTester()
