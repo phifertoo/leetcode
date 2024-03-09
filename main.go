@@ -5,7 +5,9 @@ import (
 )
 
 func main() {
-	exercises.IsValidParenthesesTester()
+	exercises.RemoveDuplicatesFromArrayTester()
+	// exercises.MergeTwoListsTester()
+	// exercises.IsValidParenthesesTester()
 	// exercises.LongestCommonPrefixTester()
 	// exercises.RomanToIntTester()
 	// exercises.IsPalindromeTester()
