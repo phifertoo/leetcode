@@ -5,7 +5,8 @@ import (
 )
 
 func main() {
-	exercises.RemoveElementFromArrayTester()
+	exercises.IndexOfFirstOccuranceTester()
+	// exercises.RemoveElementFromArrayTester()
 	// exercises.RemoveDuplicatesFromArrayTester()
 	// exercises.MergeTwoListsTester()
 	// exercises.IsValidParenthesesTester()
