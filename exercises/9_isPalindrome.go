@@ -2,6 +2,8 @@ package exercises
 
 import "fmt"
 
+// Given an integer x, return true if x is a palindrome, and false otherwise.
+
 func IsPalindrome(x int) bool {
 	// convert number to string
 	numStr := fmt.Sprintf("%d", x)

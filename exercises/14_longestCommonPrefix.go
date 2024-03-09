@@ -2,6 +2,10 @@ package exercises
 
 import "fmt"
 
+// Write a function to find the longest common prefix string amongst an array of strings.
+
+// If there is no common prefix, return an empty string "".
+
 func longestCommonPrefix(strs []string) string {
 	if len(strs) == 1 {
 		return strs[0]
