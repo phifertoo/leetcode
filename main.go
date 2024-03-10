@@ -5,7 +5,15 @@ import (
 )
 
 func main() {
-	exercises.InorderTraversalTester()
+	exercises.SingleNumberTester()
+	// exercises.IsPalindrome2Tester()
+	// exercises.MaxProfitTester()
+	// exercises.PascalsTriangleTester()
+	// exercises.SortedArrayToBSTTester()
+	// exercises.MaxDepthTester()
+	// exercises.IsSymmetricTester2()
+	// exercises.IsSymmetricTester1()
+	// exercises.InorderTraversalTester()
 	// exercises.SqrtTester()
 	// exercises.AddBinaryTester()
 	// exercises.PlusOneTester()
