@@ -5,7 +5,10 @@ import (
 )
 
 func main() {
-	exercises.IndexOfFirstOccuranceTester()
+	exercises.PlusOneTester()
+	// exercises.LengthOfLastWordTester()
+	// exercises.SearchInsertTester()
+	// exercises.IndexOfFirstOccuranceTester()
 	// exercises.RemoveElementFromArrayTester()
 	// exercises.RemoveDuplicatesFromArrayTester()
 	// exercises.MergeTwoListsTester()
