@@ -5,7 +5,9 @@ import (
 )
 
 func main() {
-	exercises.AddBinaryTester()
+	exercises.InorderTraversalTester()
+	// exercises.SqrtTester()
+	// exercises.AddBinaryTester()
 	// exercises.PlusOneTester()
 	// exercises.LengthOfLastWordTester()
 	// exercises.SearchInsertTester()
