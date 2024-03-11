@@ -5,7 +5,12 @@ import (
 )
 
 func main() {
-	exercises.MissingNumberTester()
+	exercises.FizzBuzzTester()
+	// exercises.FirstUniqueCharacterTester()
+	// exercises.IntersectionOfTwoArraysTester()
+	// exercises.ReverseStringTester()
+	// exercises.PowerOfThreeTester()
+	// exercises.MissingNumberTester()
 	// exercises.IsValidAnagramTester()
 	// exercises.IsLinkedListPalindromeTester()
 	// exercises.ContainsDuplicateTester()
