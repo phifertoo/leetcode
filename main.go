@@ -5,7 +5,11 @@ import (
 )
 
 func main() {
-	exercises.MajorityElementTester()
+	exercises.HappyNumberTester()
+	// exercises.Count1BitsTester()
+	// exercises.ReserseBitsTester()
+	// exercises.TitleToNumberTester()
+	// exercises.MajorityElementTester()
 	// exercises.HasCycleTester()
 	// exercises.SingleNumberTester()
 	// exercises.IsPalindrome2Tester()
