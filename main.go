@@ -5,7 +5,12 @@ import (
 )
 
 func main() {
-	exercises.HappyNumberTester()
+	exercises.MissingNumberTester()
+	// exercises.IsValidAnagramTester()
+	// exercises.IsLinkedListPalindromeTester()
+	// exercises.ContainsDuplicateTester()
+	// exercises.ReverseLinkedListTester()
+	// exercises.HappyNumberTester()
 	// exercises.Count1BitsTester()
 	// exercises.ReserseBitsTester()
 	// exercises.TitleToNumberTester()

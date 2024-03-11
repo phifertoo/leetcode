@@ -14,12 +14,14 @@ func TitleToNumber(columnTitle string) int {
 		"Z": 26,
 	}
 
-	sum := 0
+	// keep a running sum
+	// multiply the previous total by the total then add the current letter value
+	total := 0
 	for _, letter := range columnTitle {
-		sum = sum*26 + letterMap[string(letter)]
+		total = total*26 + letterMap[string(letter)]
 	}
 
-	return sum
+	return total
 }
 
 func TitleToNumberTester() bool {
