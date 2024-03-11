@@ -5,7 +5,9 @@ import (
 )
 
 func main() {
-	exercises.SingleNumberTester()
+	exercises.MajorityElementTester()
+	// exercises.HasCycleTester()
+	// exercises.SingleNumberTester()
 	// exercises.IsPalindrome2Tester()
 	// exercises.MaxProfitTester()
 	// exercises.PascalsTriangleTester()
