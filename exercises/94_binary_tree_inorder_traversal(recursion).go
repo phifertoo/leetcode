@@ -19,17 +19,36 @@ func InorderTraversal(root *TreeNode) []int {
 	return output
 }
 
-func inorder(node *TreeNode, result *[]int) {
+func inorder(node *TreeNode, output *[]int) {
 	if node == nil {
 		return
 	}
-	// Traverse the left subtree
-	inorder(node.Left, result)
-	// append the root value of the current node
-	*result = append(*result, node.Val)
-	// Traverse the right subtree
-	inorder(node.Right, result)
+
+	inorder(node.Left, output)
+	// remember to use the reference because you are not returning anything
+	*output = append(*output, node.Val)
+	inorder(node.Right, output)
 }
+
+// func InorderTraversal(root *TreeNode) []int {
+// 	output := []int{}
+
+// 	inorder(root, &output)
+
+// 	return output
+// }
+
+// func inorder(node *TreeNode, result *[]int) {
+// 	if node == nil {
+// 		return
+// 	}
+// 	// Traverse the left subtree
+// 	inorder(node.Left, result)
+// 	// append the root value of the current node
+// 	*result = append(*result, node.Val)
+// 	// Traverse the right subtree
+// 	inorder(node.Right, result)
+// }
 
 func InorderTraversalTester() bool {
 	node3 := TreeNode{Val: 3, Right: nil, Left: nil}

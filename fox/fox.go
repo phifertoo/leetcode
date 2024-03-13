@@ -15,11 +15,11 @@ func (h *MinHeap) insertAndSort(element Element) {
 	h.Elements = append(h.Elements, element)
 	currentIndex := len(h.Elements) - 1
 	for currentIndex > 0 {
-		parentIndex := (len(h.Elements) - 1) / 2
+		parentIndex := (currentIndex - 1) / 2
 		if h.Elements[parentIndex].Frequency < h.Elements[currentIndex].Frequency {
 			break
 		}
-		h.Elements[parentIndex], h.Elements[currentIndex] = h.Elements[currentIndex], h.Elements[parentIndex]
+		h.Elements[currentIndex], h.Elements[parentIndex] = h.Elements[parentIndex], h.Elements[currentIndex]
 		currentIndex = parentIndex
 	}
 }
@@ -35,17 +35,17 @@ func (h *MinHeap) removeMin() Element {
 }
 
 func (h *MinHeap) downHeap(index int) {
-	// lastIndex := len(h.Elements) -1
+	lastIndex := len(h.Elements) - 1
 	for {
 		leftChildIndex := index*2 + 1
 		rightChildIndex := index*2 + 2
 
 		// assume smallest index is current index then check
 		smallestIndex := index
-		if h.Elements[leftChildIndex].Frequency < h.Elements[smallestIndex].Frequency {
+		if leftChildIndex <= lastIndex && h.Elements[leftChildIndex].Frequency < h.Elements[smallestIndex].Frequency {
 			smallestIndex = leftChildIndex
 		}
-		if h.Elements[rightChildIndex].Frequency < h.Elements[smallestIndex].Frequency {
+		if rightChildIndex <= lastIndex && h.Elements[rightChildIndex].Frequency < h.Elements[smallestIndex].Frequency {
 			smallestIndex = rightChildIndex
 		}
 		// keep looping until the smallest index  = index
@@ -61,14 +61,16 @@ func (h *MinHeap) downHeap(index int) {
 func (h *MinHeap) HighestFreq(nums []int, k int) []int {
 	// make frequency map
 	freqMap := make(map[int]int)
-	for _, value := range nums {
-		value, exists := freqMap[value]
+	for _, num := range nums {
+		_, exists := freqMap[num]
 		if exists {
-			freqMap[value]++
+			freqMap[num]++
 		} else {
-			freqMap[value] = 1
+			freqMap[num] = 1
 		}
 	}
+
+	// fmt.Printf("start:%+v:end\n", freqMap)
 
 	// itereate through frequency map to append element to heap
 	for value, frequency := range freqMap {
@@ -84,10 +86,15 @@ func (h *MinHeap) HighestFreq(nums []int, k int) []int {
 		}
 	}
 
-	// return the array with the minimum k elements
+	// // return the array with the minimum k elements
+	// output := make([]int, k)
+	// for i := 0; i < k; i++ {
+	// 	// append to output in reverse order
+	// 	output[k-i-1] = h.removeMin().Value // Extract elements from the heap, in reverse order
+	// }
 	output := []int{}
-	for i := 0; i < k; i++ {
-		output[k-i-1] = h.removeMin().Value
+	for _, element := range h.Elements {
+		output = append(output, element.Value)
 	}
 
 	return output

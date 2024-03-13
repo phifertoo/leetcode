@@ -1,12 +1,11 @@
 package main
 
-import (
-	"github.com/phifertoo/leetcode/exercises"
-)
+import "github.com/phifertoo/leetcode/exercises"
 
 func main() {
-
-	exercises.Practice4Tester()
+	// heap := fox.MinHeap{}
+	// fmt.Print(heap.HighestFreq([]int{1, 1, 1, 2, 2, 3}, 2))
+	// exercises.Practice4Tester()
 	// exercises.Practice3Tester()
 	// exercises.PracticeTester()
 	// exercises.FibonacciTester()
@@ -36,7 +35,7 @@ func main() {
 	// exercises.MaxDepthTester()
 	// exercises.IsSymmetricTester2()
 	// exercises.IsSymmetricTester1()
-	// exercises.InorderTraversalTester()
+	exercises.InorderTraversalTester()
 	// exercises.SqrtTester()
 	// exercises.AddBinaryTester()
 	// exercises.PlusOneTester()
