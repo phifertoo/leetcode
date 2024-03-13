@@ -2,9 +2,8 @@ package exercises
 
 import "fmt"
 
-// Given an integer numRows, return the first numRows of Pascal's triangle.
-
-// In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
+// Given an integer array nums where the elements are sorted in ascending order, convert it to a
+// height-balanced binary search tree.
 
 func SortedArrayToBST(nums []int) *TreeNode {
 	if len(nums) == 0 {
@@ -21,7 +20,6 @@ func SortedArrayToBST(nums []int) *TreeNode {
 
 func SortedArrayToBSTTester() bool {
 
-	fmt.Printf("%+v\n", SortedArrayToBST([]int{-10, -3, 0, 5, 9})) // [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
-
+	fmt.Printf("%+v\n", SortedArrayToBST([]int{-10, -3, 0, 5, 9})) //
 	return true
 }

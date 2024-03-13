@@ -6,7 +6,7 @@ import "fmt"
 
 func IsPalindrome(x int) bool {
 	// convert number to string
-	numStr := fmt.Sprintf("%d", x)
+	numStr := string(x)
 
 	output := true
 	for i := 0; i < len(numStr); i++ {

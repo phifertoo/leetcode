@@ -5,10 +5,17 @@ import (
 )
 
 func main() {
-	exercises.FizzBuzzTester()
+
+	exercises.Practice4Tester()
+	// exercises.Practice3Tester()
+	// exercises.PracticeTester()
+	// exercises.FibonacciTester()
+	// exercises.FactorialTester()
+	// exercises.TopKFrequentTester()
+	// exercises.FizzBuzzTester()
 	// exercises.FirstUniqueCharacterTester()
 	// exercises.IntersectionOfTwoArraysTester()
-	// exercises.ReverseStringTester()
+	// exercises.ReverseßStringTester()
 	// exercises.PowerOfThreeTester()
 	// exercises.MissingNumberTester()
 	// exercises.IsValidAnagramTester()
